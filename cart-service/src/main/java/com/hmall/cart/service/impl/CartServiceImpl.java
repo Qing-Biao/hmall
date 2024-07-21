@@ -102,6 +102,7 @@ public class CartServiceImpl extends ServiceImpl<CartMapper, Cart> implements IC
         //2.3利用RestTemplate发起http请求，得到http的响应
         ResponseEntity<List<ItemDTO>> response = restTemplate.exchange(
                 instance.getUri() +"/items?ids={ids}",
+                //"http://localhost:8081/items?ids={ids}",
                 HttpMethod.GET,
                 null,
                 new ParameterizedTypeReference<List<ItemDTO>>() {
@@ -110,7 +111,7 @@ public class CartServiceImpl extends ServiceImpl<CartMapper, Cart> implements IC
         );
 
         //2.2解析响应
-        if(response.getStatusCode().is2xxSuccessful()){
+        if(!response.getStatusCode().is2xxSuccessful()){
             //查询失败，直接返回
             return;
         }
