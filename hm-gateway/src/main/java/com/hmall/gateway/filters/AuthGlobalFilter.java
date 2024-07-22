@@ -56,9 +56,13 @@ public class AuthGlobalFilter implements GlobalFilter, Ordered {
         }
 
         //TODO 5.传递用户信息
+        String userInfo = userId.toString();
+        ServerWebExchange swe = exchange.mutate()
+                .request(builder -> builder.header("user-info", userInfo))
+                .build();
 
         //6.放行
-        return chain.filter(exchange);
+        return chain.filter(swe);
     }
 
     private boolean isExclude(String path) {
