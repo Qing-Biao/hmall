@@ -277,3 +277,37 @@ com.hmall.common.exception.UnauthorizedException: 未登录
 10:20:17:406  INFO 6184 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
 10:20:17:521  INFO 6184 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
 10:20:18:062  INFO 6184 --- [main] com.hmall.HMallApplication               : Started HMallApplication in 12.397 seconds (JVM running for 14.722)
+22:48:39:626  INFO 14408 --- [main] com.hmall.HMallApplication               : Starting HMallApplication using Java 11.0.24 on Xie with PID 14408 (G:\Personal\code\maven-project\hmall\hm-service\target\classes started by HP in G:\Personal\code\maven-project\hmall)
+22:48:39:628 DEBUG 14408 --- [main] com.hmall.HMallApplication               : Running with Spring Boot v2.7.12, Spring v5.3.27
+22:48:39:628  INFO 14408 --- [main] com.hmall.HMallApplication               : The following 1 profile is active: "dev"
+22:48:40:115  INFO 14408 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+22:48:40:116  INFO 14408 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+22:48:40:141  INFO 14408 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+22:48:40:485  INFO 14408 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+22:48:40:491  INFO 14408 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+22:48:40:491  INFO 14408 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+22:48:40:580  INFO 14408 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+22:48:40:580  INFO 14408 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 926 ms
+22:48:42:276  INFO 14408 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+22:48:42:557  INFO 14408 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+22:48:42:558  INFO 14408 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+22:48:42:560  INFO 14408 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+22:48:42:577  INFO 14408 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+22:48:42:674  INFO 14408 --- [main] com.hmall.HMallApplication               : Started HMallApplication in 3.278 seconds (JVM running for 4.16)
+22:53:03:236  INFO 24044 --- [main] com.hmall.HMallApplication               : Starting HMallApplication using Java 11.0.24 on Xie with PID 24044 (G:\Personal\code\maven-project\hmall\hm-service\target\classes started by HP in G:\Personal\code\maven-project\hmall)
+22:53:03:238 DEBUG 24044 --- [main] com.hmall.HMallApplication               : Running with Spring Boot v2.7.12, Spring v5.3.27
+22:53:03:239  INFO 24044 --- [main] com.hmall.HMallApplication               : The following 1 profile is active: "dev"
+22:53:03:721  INFO 24044 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+22:53:03:723  INFO 24044 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+22:53:03:739  INFO 24044 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+22:53:04:019  INFO 24044 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+22:53:04:023  INFO 24044 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+22:53:04:024  INFO 24044 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+22:53:04:103  INFO 24044 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+22:53:04:103  INFO 24044 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 840 ms
+22:53:05:869  INFO 24044 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+22:53:06:118  INFO 24044 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+22:53:06:119  INFO 24044 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+22:53:06:122  INFO 24044 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+22:53:06:143  INFO 24044 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+22:53:06:248  INFO 24044 --- [main] com.hmall.HMallApplication               : Started HMallApplication in 3.248 seconds (JVM running for 3.938)

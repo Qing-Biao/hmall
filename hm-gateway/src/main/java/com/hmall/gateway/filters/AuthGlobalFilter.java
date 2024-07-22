@@ -55,7 +55,7 @@ public class AuthGlobalFilter implements GlobalFilter, Ordered {
             response.setComplete();
         }
 
-        //TODO 5.传递用户信息
+        //5.传递用户信息
         String userInfo = userId.toString();
         ServerWebExchange swe = exchange.mutate()
                 .request(builder -> builder.header("user-info", userInfo))
