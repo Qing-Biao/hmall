@@ -16,7 +16,7 @@ cloud:
       - id: item-service
         uri: lb://item-service
         predicates:
-        - Path=/items/**,/search/**
+          - Path=/items/**,/search/**
 
       - id: pay-service
         uri: lb://user-service
@@ -32,3 +32,19 @@ cloud:
         uri: lb://user-service
         predicates:
           - Path=/address/**,/users/**
+
+    default-filters:
+      - AddRequestHeader=truth, Life is like chess, no regrets
+
+hm:
+  jwt:
+    location: classpath:hmall.jks
+    alias: hmall
+    password: hmall123
+    tokenTTL: 30m
+  auth:
+    excludePaths:
+      - /search/**
+      - /users/login
+      - /items/**
+      - /hi
