@@ -1912,3 +1912,17 @@ Caused by: com.alibaba.nacos.api.exception.NacosException: Client not connected,
 22:53:26:650  INFO 23400 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
 22:53:26:666  INFO 23400 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
 22:53:26:756  INFO 23400 --- [main] com.hmall.item.ItemApplication           : Started ItemApplication in 20.022 seconds (JVM running for 20.698)
+23:09:51:782  INFO 23400 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [4fea8b47-c11f-4436-b703-396f8f459610] Server healthy check fail, currentConnection = 1721581100788_192.168.74.1_3744
+23:09:51:782  INFO 23400 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [4fea8b47-c11f-4436-b703-396f8f459610] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+23:09:52:136  INFO 23400 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [4fea8b47-c11f-4436-b703-396f8f459610] Success to connect a server [192.168.74.121:8848], connectionId = 1721582135930_192.168.74.1_8492
+23:09:52:136  INFO 23400 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [4fea8b47-c11f-4436-b703-396f8f459610] Abandon prev connection, server is 192.168.74.121:8848, connectionId is 1721581100788_192.168.74.1_3744
+23:09:52:137  INFO 23400 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : Close current connection 1721581100788_192.168.74.1_3744
+23:09:52:139  INFO 23400 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [4fea8b47-c11f-4436-b703-396f8f459610] Notify disconnected event to listeners
+23:09:52:140  INFO 23400 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [4fea8b47-c11f-4436-b703-396f8f459610] Notify connected event to listeners.
+23:09:52:141  WARN 23400 --- [nacos-grpc-client-executor-215] c.a.n.c.remote.client.grpc.GrpcClient    : [1721581100788_192.168.74.1_3744]Ignore error event,isRunning:true,isAbandon=true
+23:09:52:641  INFO 10544 --- [nacos-grpc-client-executor-215] com.alibaba.nacos.common.remote.client   : [d9c12923-3efb-4344-a2b6-3a1285cc4e70] Receive server push request, request = NotifySubscriberRequest, requestId = 66
+23:09:52:643  INFO 10544 --- [nacos-grpc-client-executor-215] com.alibaba.nacos.common.remote.client   : [d9c12923-3efb-4344-a2b6-3a1285cc4e70] Ack server push request, request = NotifySubscriberRequest, requestId = 66
+23:09:53:247  INFO 10544 --- [nacos-grpc-client-executor-216] com.alibaba.nacos.common.remote.client   : [d9c12923-3efb-4344-a2b6-3a1285cc4e70] Receive server push request, request = NotifySubscriberRequest, requestId = 67
+23:09:53:248  INFO 23400 --- [nacos-grpc-client-executor-218] com.alibaba.nacos.common.remote.client   : [4fea8b47-c11f-4436-b703-396f8f459610] Receive server push request, request = NotifySubscriberRequest, requestId = 68
+23:09:53:248  INFO 23400 --- [nacos-grpc-client-executor-218] com.alibaba.nacos.common.remote.client   : [4fea8b47-c11f-4436-b703-396f8f459610] Ack server push request, request = NotifySubscriberRequest, requestId = 68
+23:09:53:249  INFO 10544 --- [nacos-grpc-client-executor-216] com.alibaba.nacos.common.remote.client   : [d9c12923-3efb-4344-a2b6-3a1285cc4e70] Ack server push request, request = NotifySubscriberRequest, requestId = 67
