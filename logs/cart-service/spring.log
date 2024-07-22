@@ -2405,3 +2405,50 @@ app_requested
 01:00:51:173  INFO 27672 --- [SpringApplicationShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@4ab48a4c[Running, pool size = 10, active threads = 0, queued tasks = 0, completed tasks = 25]
 01:00:51:178  INFO 27672 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 01:00:51:216  INFO 27672 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+01:00:57:840  INFO 29860 --- [main] com.hmall.cart.CartApplication           : The following 1 profile is active: "local"
+01:00:58:375  INFO 29860 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=44ff56a7-b05e-3619-8779-996a84eb6e85
+01:00:58:567  INFO 29860 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+01:00:58:573  INFO 29860 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+01:00:58:573  INFO 29860 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+01:00:58:658  INFO 29860 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+01:00:58:659  INFO 29860 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 809 ms
+01:00:58:767  INFO 29860 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
+01:01:01:058  INFO 29860 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+01:01:01:081  INFO 29860 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+01:01:02:444  INFO 29860 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+01:01:02:535  INFO 29860 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of f416854d-647a-4207-a6e8-e6d7c41ca0ad
+01:01:02:535  INFO 29860 --- [main] com.alibaba.nacos.common.remote.client   : [f416854d-647a-4207-a6e8-e6d7c41ca0ad] RpcClient init label, labels = {module=naming, source=sdk}
+01:01:02:536  INFO 29860 --- [main] com.alibaba.nacos.common.remote.client   : [f416854d-647a-4207-a6e8-e6d7c41ca0ad] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+01:01:02:536  INFO 29860 --- [main] com.alibaba.nacos.common.remote.client   : [f416854d-647a-4207-a6e8-e6d7c41ca0ad] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+01:01:02:536  INFO 29860 --- [main] com.alibaba.nacos.common.remote.client   : [f416854d-647a-4207-a6e8-e6d7c41ca0ad] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+01:01:02:537  INFO 29860 --- [main] com.alibaba.nacos.common.remote.client   : [f416854d-647a-4207-a6e8-e6d7c41ca0ad] Try to connect to server on start up, server: {serverIp = '192.168.74.121', server main port = 8848}
+01:01:02:661  INFO 29860 --- [main] com.alibaba.nacos.common.remote.client   : [f416854d-647a-4207-a6e8-e6d7c41ca0ad] Success to connect to server [192.168.74.121:8848] on start up, connectionId = 1721589362481_192.168.74.1_13046
+01:01:02:661  INFO 29860 --- [main] com.alibaba.nacos.common.remote.client   : [f416854d-647a-4207-a6e8-e6d7c41ca0ad] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+01:01:02:661  INFO 29860 --- [main] com.alibaba.nacos.common.remote.client   : [f416854d-647a-4207-a6e8-e6d7c41ca0ad] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$474/0x0000000800426440
+01:01:02:661  INFO 29860 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [f416854d-647a-4207-a6e8-e6d7c41ca0ad] Notify connected event to listeners.
+01:01:02:694  INFO 29860 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+01:01:02:700  INFO 29860 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP cart-service 192.168.204.1:8082 register finished
+01:01:03:224  INFO 29860 --- [nacos-grpc-client-executor-5] com.alibaba.nacos.common.remote.client   : [f416854d-647a-4207-a6e8-e6d7c41ca0ad] Receive server push request, request = NotifySubscriberRequest, requestId = 148
+01:01:03:226  INFO 29860 --- [nacos-grpc-client-executor-5] com.alibaba.nacos.common.remote.client   : [f416854d-647a-4207-a6e8-e6d7c41ca0ad] Ack server push request, request = NotifySubscriberRequest, requestId = 148
+01:01:04:033  INFO 29860 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+01:01:04:034  INFO 29860 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+01:01:04:036  INFO 29860 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+01:01:04:056  INFO 29860 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+01:01:04:111  INFO 29860 --- [main] com.hmall.cart.CartApplication           : Started CartApplication in 10.853 seconds (JVM running for 11.56)
+01:01:04:114  INFO 29860 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=cart-service, group=DEFAULT_GROUP
+01:01:04:115  INFO 29860 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=cart-service.yaml, group=DEFAULT_GROUP
+01:01:04:115  INFO 29860 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=cart-service-local.yaml, group=DEFAULT_GROUP
+01:01:06:186  INFO 29860 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+01:01:06:186  INFO 29860 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+01:01:06:187  INFO 29860 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+01:01:06:289  INFO 29860 --- [http-nio-8082-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+01:01:06:411  INFO 29860 --- [http-nio-8082-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+01:01:06:416 DEBUG 29860 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.selectCount   : ==>  Preparing: SELECT COUNT( * ) AS total FROM cart WHERE (user_id = ? AND item_id = ?)
+01:01:06:428 DEBUG 29860 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.selectCount   : ==> Parameters: 1(Long), 4026319(Long)
+01:01:06:439 DEBUG 29860 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.selectCount   : <==      Total: 1
+01:01:06:443 DEBUG 29860 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.selectCount   : ==>  Preparing: SELECT COUNT( * ) AS total FROM cart WHERE (user_id = ?)
+01:01:06:443 DEBUG 29860 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.selectCount   : ==> Parameters: 1(Long)
+01:01:06:444 DEBUG 29860 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.selectCount   : <==      Total: 1
+01:01:10:450 DEBUG 29860 --- [http-nio-8082-exec-1] com.hmall.cart.mapper.CartMapper.insert  : ==>  Preparing: INSERT INTO cart ( user_id, item_id, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ? )
+01:01:10:450 DEBUG 29860 --- [http-nio-8082-exec-1] com.hmall.cart.mapper.CartMapper.insert  : ==> Parameters: 1(Long), 4026319(Long), TCL 65A950C 65英寸32核人工智能 HDR曲面超薄4K电视金属机身（枪色）(String), {"版本": "65英寸"}(String), 394400(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/5269/2/12146/122833/5bd2a509Ed9ba6c1f/6a50f35bfacecbc6.jpg!q70.jpg.webp(String)
+01:01:10:453 DEBUG 29860 --- [http-nio-8082-exec-1] com.hmall.cart.mapper.CartMapper.insert  : <==    Updates: 1
