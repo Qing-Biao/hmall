@@ -1,6 +1,6 @@
 package com.hmall.api.client.fallback;
 
-import cn.hutool.core.collection.CollUtil;
+
 import com.hmall.api.client.ItemClient;
 import com.hmall.api.dto.ItemDTO;
 import com.hmall.api.dto.OrderDetailDTO;
