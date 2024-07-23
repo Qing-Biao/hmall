@@ -1,4 +1,4 @@
-package com.hmall.gateway.route;
+package com.hmall.gateway.routers;
 
 import cn.hutool.json.JSONUtil;
 import com.alibaba.cloud.nacos.NacosConfigManager;
