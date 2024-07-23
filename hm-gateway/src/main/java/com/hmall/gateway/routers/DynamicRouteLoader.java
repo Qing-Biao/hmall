@@ -34,7 +34,7 @@ public class DynamicRouteLoader {
 
     @PostConstruct
     public void initRouteConfigListener() throws NacosException {
-        //项目启动时，先拉取一次配置，并添加配置监听器
+        //1.项目启动时，先拉取一次配置，并添加配置监听器
         String configInfo = nacosConfigManager.getConfigService()
                 .getConfigAndSignListener(dataId, group, 5000, new Listener() {
                     @Override
@@ -48,7 +48,7 @@ public class DynamicRouteLoader {
                         updateConfigInfo(configInfo);
                     }
                 });
-        // 3。第一次读取到配置，也需要更新到路由表
+        // 3.第一次读取到配置，也需要更新到路由表
         updateConfigInfo(configInfo);
     }
 
