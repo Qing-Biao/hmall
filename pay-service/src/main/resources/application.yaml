@@ -13,6 +13,12 @@ spring:
   cloud:
     nacos:
       server-addr: 192.168.74.121:8848
+  rabbitmq:
+    host: 182.168.74.121
+    port: 5672
+    username: hmall
+    password: 123
+
 mybatis-plus:
   configuration:
     default-enum-type-handler: com.baomidou.mybatisplus.core.handlers.MybatisEnumTypeHandler
@@ -42,3 +48,4 @@ knife4j:
         api-rule: package
         api-rule-resources:
           - com.hmall.pay.controller
+
