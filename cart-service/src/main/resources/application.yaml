@@ -2,9 +2,9 @@ server:
   port: 8082
   tomcat:
     threads:
-      max: 50
-    accept-count: 50
-    max-connections: 100
+      max: 50 # 允许的最大线程数
+    accept-count: 50 # 最大排队等待数量
+    max-connections: 100 # 允许的最大连接
 feign:
   okhttp:
     enabled: true # 开启OKHttp连接池支持
@@ -21,6 +21,5 @@ spring:
   cloud:
     sentinel:
       transport:
-        dashboard: localhost:8090 # sentinel的控制台地址
+        dashboard: localhost:8090
       http-method-specify: true # 开启请求方式前缀
-
